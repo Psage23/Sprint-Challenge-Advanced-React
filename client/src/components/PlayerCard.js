@@ -5,10 +5,10 @@ import React from 'react'
 
 const PlayerCard = props => {
     return (
-        <div>
+        <div className="card">
             {props.players.map(person => {
                 return (
-                    <div>
+                    <div className="player-card">
                     <h1>Name: {person.name}</h1>
                     <p>Country: {person.country}</p>
                     <p>Searches: {person.searches}</p>
