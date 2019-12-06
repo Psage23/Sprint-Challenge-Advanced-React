@@ -1,10 +1,11 @@
 import React from 'react';
 import axios from 'axios';
+import ToggleBar from './components/DarkMode';
 import PlayerCard from './components/PlayerCard';
 import './App.css';
 
+
 class App extends React.Component {
-  
       state = {
         players: [],
       };
@@ -22,7 +23,7 @@ render() {
   console.log('render is working')
   return (
     <div className="App">
-      <h1>Women's World Cup Trends</h1>
+      <ToggleBar />
       <div className="results">
         <PlayerCard players={this.state.players}/>
       </div>
